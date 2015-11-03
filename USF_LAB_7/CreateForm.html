@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<style>
+.options {
+text-align: center;
+padding-top: 20px;
+background-color: white;
+height: 40px;
+}
+.options2{
+text-align: center;
+margin-bottom: 20px;
+background-color: white;
+height: 40px;
+}
+</style>
+<head>
+<script>
+function InputTextField(){
+var nam = prompt("Enter name of text filed","");
+Pname.innerHTML = Pname.innerHTML +nam+"<input type='text' name='mytext' >"
+}
+function InputPassword(){
+var nam = prompt("Enter name of password field","");
+Pname.innerHTML = Pname.innerHTML +nam+"<input type='password' name='mytext' >"
+
+}
+function InputRadio(){
+var nam = prompt("Enter name of radio button","");
+radio.innerHTML = radio.innerHTML +nam+"<br><input type='radio' name='mytext' ></br>"
+
+}
+function InputKeygen(){
+var nam = prompt("Enter the Category","");
+Tarea.innerHTML = Tarea.innerHTML +nam+" <keygen name='security'>"
+
+}
+function InputCheck(){
+var nam = prompt("Enter name of check box","");
+radio.innerHTML = radio.innerHTML +nam+"<br><input type='checkbox' name='mytext' ></br>"
+
+}
+function InputNumber(){
+var nam = prompt("Enter name of Number field","");
+number.innerHTML = number.innerHTML +nam+"<input type='number' name='mytext' >"
+
+}
+function InputTextArea(){
+var nam = prompt("Enter name of Text Area","");
+Tarea.innerHTML = Tarea.innerHTML +nam+"<textarea name='textarea' > </textarea>"
+}
+function form_submit(){
+var nam = prompt("Enter link to submit","#a");
+}
+</script>
+</head>
+<body style="background-color: green">
+<div class="options">
+<input type="hidden" name="numtxt" id="numtxt" value="1"> 
+<input id= "name" type="button" onClick="InputTextField()" value=" Create Text Field">
+<input id= "name" type="button" onClick="InputPassword()" value="Create Password Field">
+<input id= "name" type="button" onClick="InputRadio()" value="Create Radio Button">
+<input id= "name" type="button" onClick="InputCheck()" value="Create Check Box">
+<input id= "name" type="button" onClick="InputKeygen()" value="Create Keygen">
+<input id= "name" type="button" onClick="InputNumber()" value="Create Number Field">
+<input id= "name" type="button" onClick="InputTextArea()" value="Create Text Area">
+</div>
+<div class="options2">
+<input type="submit" name="submit" onClick="form_submit()" value="Submit Form">
+</div>
+<div id = "Pname" >
+</div>
+<h2 id="Fname" > </h2>
+<div id="radio">
+</div>
+<div id = "check">
+</div>
+<div id= "number">
+</div>
+<div id= "Tarea">
+</div>
+</body>
+</html> 
